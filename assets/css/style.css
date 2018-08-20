@@ -1,0 +1,16 @@
+body {
+    margin: auto;
+    background: url "https://goatrestaurant.com/wp-content/uploads/sites/104/2018/03/The-G-O-A-T-B1-s.png";
+}
+.jumbotron{
+    color: rgb(32, 30, 30);
+}
+.goat{
+    width: 100px;
+    height:100px;
+}
+.card-img-top {
+    width: 100px;
+    height:100px;
+
+}
