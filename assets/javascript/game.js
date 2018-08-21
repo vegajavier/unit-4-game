@@ -1,8 +1,6 @@
 /// WHO IS THE G.O.A.T
 //1. START GAME
-function startGame() {
 
-}
 
 let player = {
     health: 100,
@@ -33,6 +31,12 @@ const printToScreen = () => {
     document.getElementsByClassName('opponent-health').innerText = opponent2.health;
     document.getElementsByClassName('opponent-health').innerText = opponent3.health;
     
+}
+
+const attack = () => {
+    let playerAttack = Math.random();
+    console.log(playerAttack);
+
 }
 
 
