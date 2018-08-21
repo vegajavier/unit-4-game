@@ -8,6 +8,11 @@ body {
     padding: 0;
     color: rgb(32, 30, 30);
     border-bottom: solid black 2px;
+    background-image: url("assets/images/joevstom");
+}
+.goat1{
+    width: 250px;
+    height:150px;
 }
 .goat{
     width: 150px;
@@ -27,6 +32,7 @@ body {
 .score-container {
     margin-top: 50px;
 }
+
 
 @media screen{
     min-width: 980px,768px,640px;
