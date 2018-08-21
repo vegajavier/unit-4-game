@@ -24,20 +24,24 @@ let opponent3 ={
     power: 15,
     counterAttack: 5,
 }
+const pass = () => {
+    let playerAttack = Math.floor(Math.random() * player.power);
+    console.log(playerAttack);
+    
+
+}
 
 const printToScreen = () => {
-    document.getElementsByClassName('player-health').innerText = player.health;
-    document.getElementsByClassName('opponent-health').innerText = opponent1.health;
-    document.getElementsByClassName('opponent-health').innerText = opponent2.health;
-    document.getElementsByClassName('opponent-health').innerText = opponent3.health;
+    document.getElementsByClassName("player-health").innerText = player.health;
+    document.getElementsByClassName("opponent-health").innerText = opponent1.health;
+    document.getElementsByClassName("opponent-health").innerText = opponent2.health;
+    document.getElementsByClassName("opponent-health").innerText = opponent3.health;
     
 }
 
-const attack = () => {
-    let playerAttack = Math.random();
-    console.log(playerAttack);
+printToScreen ()
 
-}
+
 
 
 // 2. CHOOSE AN OPPONENT
