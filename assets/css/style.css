@@ -1,16 +1,33 @@
+@media screen{
+    min-width: 980px,768px,640px;
+}
 body {
-    margin: auto;
-    background: url "https://goatrestaurant.com/wp-content/uploads/sites/104/2018/03/The-G-O-A-T-B1-s.png";
+    background: url("https://images.unsplash.com/photo-1485827031228-b1736cb1fd06?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=8f5ad4bbb9cd18a2f672514ea9a75833&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80");
 }
 .jumbotron{
+    padding: 0;
     color: rgb(32, 30, 30);
+    border-bottom: solid black 2px;
 }
 .goat{
-    width: 100px;
-    height:100px;
+    width: 150px;
+    height:150px;
+}
+.image-container{
+    margin-left: 50px;
 }
 .card-img-top {
     width: 100px;
     height:100px;
+}
+.card-text{
+    font-weight: 700;
+    color : rgb(66, 13, 13)
+}
+.score-container {
+    margin-top: 50px;
+}
 
+@media screen{
+    min-width: 980px,768px,640px;
 }
