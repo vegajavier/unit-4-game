@@ -1,40 +1,42 @@
-/// WHO IS THE G.O.A.T///
-//// Player attributes as objects////
+//Global variables
+$(document).ready(function () {
 
-let player = {
-    health: 100,
-    power: 25,
-    counterAttack: 15,
-}
-let opponent1 ={
-    health:100,
-    power: 15,
-    counterAttack: 15,
-}
+    let players = {
+        'montana': {
+            name: 'montana',
+            health: 120,
+            attack: 8,
+            image: "assets/images/giphy.gif",
+            enemyAttackBack: 15
+        },
+        'brady': {
+            name: 'brady',
+            health: 100,
+            attack: 14,
+            image: "assets/images/giphy (2).gif",
+            enemyAttackBack: 5
+        },
+        'marino': {
+            name: 'marino',
+            health: 150,
+            attack: 8,
+            image: "assets/images/giphy (3).gif",
+            enemyAttackBack: 20
+        },
+        'manning': {
+            name: 'manning',
+            health: 180,
+            attack: 7,
+            image: "assets/images/giphy (5).gif",
+            enemyAttackBack: 20
+        }
+    }
+});
 
-let opponent2 ={
-    health:100,
-    power: 15,
-    counterAttack: 10,
-}
-
-let opponent3 ={
-    health:100,
-    power: 15,
-    counterAttack: 5,
-}
-let pass = () => {
-    let passButton = document.getElementsByClass("passbutton");
-    let playerPass =Math.Floor(Math.random() * player.power);
-    console.log(playerPass);  /////<---why dont you work????
-    opponent.health -= playerPass;
-    printToScreen();
-    passButton.disabled = true;
-     
-}
-  const printToScreen = () => {
-    document.getElementsByClass(".player-health").innerText = player.health;
-    document.getElementsByClass(".opponent-health").innerText = opponent1.health;
-    document.getElementsByClass(".opponent-health").innerText = opponent2.health;
-    document.getElementsByClass(".opponent-health").innerText = opponent3.health;
-  }
+let currentCharacter;
+let currentOpponent;
+let fighters;
+let indexofCurrChar;
+let fightresult;
+let turncounter = 1;
+let killcounter = 0;

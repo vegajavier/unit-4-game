@@ -1,72 +1,91 @@
 <!Doctype html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>G.O.A.T</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <link rel="stylesheet" href = "assets/css/reset.css">
-    <link rel = "stylesheet"
-     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="assets/javascript/game.js">
-    </script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>G.O.A.T</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
 </head>
-   <body>
-      <div class="jumbotron jumbotron-fluid">
-                
-          <div class="container">
-                <h1 class="display-4"> Whose the <img class = "goat" src ="assets/images/goat logo.png"></h1>
-                <p class="lead">The neverending debate on who is the Greatest of all time, who is the G.O.A.T of the Quarterback Position. The Debate ends now!</p>
-          </div>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <h1 class="display-4"> Whose the <img class="goat" src="assets/images/goat logo.png"></h1>
+      <p class="lead">The neverending debate on who is the Greatest of all time, who is the G.O.A.T of the Quarterback Position.
+        The Debate ends now!</p>
+        <div class="card" style="width: 14rem;"><video class="card-img-top" controls autoplay src="assets/video/goat-video.mp4"
+            type="video/mp4"></video>
+    </a>
+  </nav>
+  <div id="characters-section">
+    <div class="section-title">
+      <h1>Select Your QB</h1>
+    </div>
+    <div id="character-area"></div>
+  </div>
+  <div class="image-container">
+    <div class="row">
+      <div class="card" style="width: 14rem;">
+        <p class="card-text">MONTANA</p>
+        <img class="card-img-top" src="assets/images/giphy.gif" alt="montana">
+        <p class="card-text">180</p>
+        <div class="card-body">
           
         </div>
-              
-      <div class = "image-container">
-        <div class="row">
-              <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="assets/images/giphy.gif" alt="montana">
-                    <div class="card-body">
-                      <p class="card-text">MONTANA</p>
-                    </div>
-              </div>
-                
-                  <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src= "assets/images/giphy (2).gif">
-                        <div class="card-body">
-                          <p class="card-text">BRADY</p>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="assets/images/giphy (3).gif" alt="Card image cap">
-                            <div class="card-body">
-                              <p class="card-text">MARINO</p>
-                            </div>
-                      </div>
-                    
-                          <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="assets/images/giphy (5).gif" alt="Card image cap">
-                                <div class="card-body">
-                                  <p class="card-text">MANNING</p>
-                                </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
-                              <video class= "card-img-top" controls autoplay  src= "assets/video/goat-video.mp4" type ="video/mp4">
-                              <div class="card-body">
-                                <p class="card-text">G.O.A.T</p>
-                              </div>
-                        </div>
-                          
+      </div>
 
+      <div class="card" style="width: 14rem;">
+        <p class="card-text">BRADY</p>
+        <img class="card-img-top" src="assets/images/giphy (2).gif">
+        <p class="card-text">160</p>
+        <div class="card-body">
+          
         </div>
-        <div class = "score-container">
-          <h3>User Health <span class= "player-health"></span></h3>
-          <h3>CPU Health <span class= "opponent-health"></span></h3>
-          <button class="passbutton" onlick="pass()">HIKE</button>
+      </div>
+      <div class="card" style="width: 14rem;">
+        <p class="card-text">MARINO</p>
+        <img class="card-img-top" src="assets/images/giphy (3).gif" alt="Card image cap">
+        <p class="card-text">130</p>
+        <div class="card-body">
+          
         </div>
+      </div>
+
+      <div class="card" style="width: 14rem;">
+        <p class="card-text">MANNING</p>
+        <img class="card-img-top" src="assets/images/giphy (5).gif" alt="Card image cap">
+        <p class="card-text">150</p>
+        <div class="card-body">
+          
+        </div>
+      </div>
+    </div>
+    <div id="selected-character-section">
+      <div class="section-title"><h2>Your QB</h2></div>
+    </div>
+
+
+    
+
+
+
+    <div class="score-container">
+      <h3>User Health <span class="player-health"></span></h3>
+      <h3>CPU Health <span class="opponent-health"></span></h3>
+      <button class="passbutton" onlick="pass()">HIKE</button>
+    </div>
+
+    <script src="assets/javascript/game.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+
+
 </html>

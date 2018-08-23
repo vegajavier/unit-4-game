@@ -4,15 +4,17 @@
 body {
     color:black;
     background: url("https://images.unsplash.com/photo-1485827031228-b1736cb1fd06?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=8f5ad4bbb9cd18a2f672514ea9a75833&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80");
+    background: cover;
+
 }
-.jumbotron{
+.navbar{
     padding: 0;
     color: rgb(32, 30, 30);
     border-bottom: solid black 2px;
 }
 .goat{
-    width: 150px;
-    height:150px;
+    width: 100px;
+    height:100px;
 }
 .image-container{
     margin-left: 50px;
@@ -23,7 +25,8 @@ body {
 }
 .card-text{
     font-weight: 700;
-    color : rgb(66, 13, 13)
+    color : rgb(66, 13, 13);
+    text-align: center
 }
 .score-container {
     margin-top: 50px;
