@@ -3,25 +3,25 @@ $(document).ready(function () {
     let images = ["joe.png", "brady.png","elway.png","manning.png"];
     
     $('img[alt="montana"]').on("click",function(){
-        $(".qb-choice").append("<img src='assets/images/joe.png' />")
+        $(".qb-choice").append("<img src='assets/images/joe.png' class='card-img-top joe'/>")
 
         // $(this).attr("src", "assets/images/joe.png"
         //     ).appendTo(".qb-choice")
     })
     $('img[alt="brady"]').on("click",function(){
-        $(".qb-choice").append("<img src='assets/images/brady.png' />")
+        $(".opponentqb").append("<img src='assets/images/brady.png' class ='card-img-top tom'/>")
 
         // $(this).attr("src", "assets/images/joe.png"
         //     ).appendTo(".qb-choice")
     })
     $('img[alt="elway"]').on("click",function(){
-        $(".qb-choice").append("<img src='assets/images/elway.png' />")
+        $(".opponentqb").append("<img src='assets/images/elway.png' class='card-img-top jon' />")
 
         // $(this).attr("src", "assets/images/joe.png"
         //     ).appendTo(".qb-choice")
     })
     $('img[alt="manning"]').on("click",function(){
-        $(".qb-choice").append("<img src='assets/images/manning.png' />")
+        $(".opponentqb").append("<img src='assets/images/manning.png' class='card-img-top man' />")
 
         // $(this).attr("src", "assets/images/joe.png"
         //     ).appendTo(".qb-choice")
