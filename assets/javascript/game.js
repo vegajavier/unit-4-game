@@ -1,42 +1,30 @@
-//Global variables
 $(document).ready(function () {
 
-    let players = {
-        'montana': {
-            name: 'montana',
-            health: 120,
-            attack: 8,
-            image: "assets/images/giphy.gif",
-            enemyAttackBack: 15
-        },
-        'brady': {
-            name: 'brady',
-            health: 100,
-            attack: 14,
-            image: "assets/images/giphy (2).gif",
-            enemyAttackBack: 5
-        },
-        'marino': {
-            name: 'marino',
-            health: 150,
-            attack: 8,
-            image: "assets/images/giphy (3).gif",
-            enemyAttackBack: 20
-        },
-        'manning': {
-            name: 'manning',
-            health: 180,
-            attack: 7,
-            image: "assets/images/giphy (5).gif",
-            enemyAttackBack: 20
-        }
-    }
-});
+    let images = ["joe.png", "brady.png","elway.png","manning.png"];
+    
+    $('img[alt="montana"]').on("click",function(){
+        $(".qb-choice").append("<img src='assets/images/joe.png' />")
 
-let currentCharacter;
-let currentOpponent;
-let fighters;
-let indexofCurrChar;
-let fightresult;
-let turncounter = 1;
-let killcounter = 0;
+        // $(this).attr("src", "assets/images/joe.png"
+        //     ).appendTo(".qb-choice")
+    })
+    $('img[alt="brady"]').on("click",function(){
+        $(".qb-choice").append("<img src='assets/images/brady.png' />")
+
+        // $(this).attr("src", "assets/images/joe.png"
+        //     ).appendTo(".qb-choice")
+    })
+    $('img[alt="elway"]').on("click",function(){
+        $(".qb-choice").append("<img src='assets/images/elway.png' />")
+
+        // $(this).attr("src", "assets/images/joe.png"
+        //     ).appendTo(".qb-choice")
+    })
+    $('img[alt="manning"]').on("click",function(){
+        $(".qb-choice").append("<img src='assets/images/manning.png' />")
+
+        // $(this).attr("src", "assets/images/joe.png"
+        //     ).appendTo(".qb-choice")
+    })
+
+})

@@ -1,11 +1,7 @@
-@media screen{
-    min-width: 980px,768px,640px;
-}
 body {
     color:black;
     background: url("https://images.unsplash.com/photo-1485827031228-b1736cb1fd06?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=8f5ad4bbb9cd18a2f672514ea9a75833&amp;auto=format&amp;fit=crop&amp;w=967&amp;q=80");
     background: cover;
-
 }
 .navbar{
     padding: 0;
@@ -19,6 +15,9 @@ body {
 .image-container{
     margin-left: 50px;
 }
+.card-body{
+    border: solid black 2px;
+}
 .card-img-top {
     width: 100px;
     height:100px;
@@ -28,11 +27,21 @@ body {
     color : rgb(66, 13, 13);
     text-align: center
 }
-.score-container {
-    margin-top: 50px;
+.qb-choice {
+    width: 100%px;
+    height: 150px;
+    border: solid black 1px;
 }
-
-
+.opponentqb {
+    width: 100%px;
+    height: 150px;
+    border: solid black 1px;
+}
+.benchqb {
+    width: 100%px;
+    height: 150px;
+    border: solid black 1px;
+}
 @media screen{
     min-width: 980px,768px,640px;
 }
