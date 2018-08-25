@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+//// IMAGES CLICKED AND MOVEED TO A DIFFERENT DIV(STADIUM)
     let images = ["joe.png", "brady.png","elway.png","manning.png"];
     
     $('img[alt="montana"]').on("click",function(){
@@ -28,3 +28,4 @@ $(document).ready(function () {
     })
 
 })
+///// IF LOGIC? SELECTED CHARACTER WILL MOVE TO USER QB, AND THE REMAINING PHOTO WILL GOTO THE STADIUM//// 
